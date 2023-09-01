@@ -2,9 +2,26 @@
 @import './hero_image';
 @import 'form';
 
+
 * {
   box-sizing: border-box;
-}
+    --swiper-pagination-color: #6ca18f;
+    --swiper-pagination-left: auto;
+    --swiper-pagination-right: 8px;
+    --swiper-pagination-bottom: 8px;
+    --swiper-pagination-top: auto;
+    --swiper-pagination-fraction-color: inherit;
+    --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
+    --swiper-pagination-progressbar-size: 4px;
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-inactive-color: #000;
+    --swiper-pagination-bullet-inactive-opacity: 0.2;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+  }
 
 body {
   font-family: 'Shantell Sans', cursive;
@@ -25,21 +42,28 @@ h2 {
   color: #6ca18f;
   letter-spacing: 3px;
   margin-bottom: 5px;
+  margin-left: auto;
 }
 
 .swiper-wrapper .swiper {
   width: 250px;
+  height: 300px;
 }
 
 .swiper-slide img {
   height: 300;
   width: 250;
+  object-fit: cover;
+}
+
+.swiper-button-next:after, .swiper-button-prev::after {
+    color: #6ca18f;
 }
 
 @media only screen and (min-width: 700px) {
   #section {
     &__slider {
-      max-width: 70%;
+      max-width: 40%;
       display: grid;
       grid-template-columns: 50% 50%;
       margin: 0 auto;
@@ -98,12 +122,13 @@ h2 {
   }
 
   .swiper-wrapper .swiper {
-    width: 300px;
+    width: 250px;
+    height: 300px;
   }
 
   .swiper-slide img {
     height: 300px;
-    width: 100%;
+    width: 250px;
     object-fit: cover;
   }
 
