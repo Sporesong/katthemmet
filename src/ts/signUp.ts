@@ -13,7 +13,7 @@ export function createFormHtml() {
   signUpSection.innerHTML = /*html */ `
   <form>
     <label for='name-input'>
-      För- och efternamn:
+      Namn:
         <input type='text' name='name-input' id='name-input'>
       </label>
       <label for='address'>

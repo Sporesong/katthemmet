@@ -21,13 +21,12 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-h2 {
+.swiper h2 {
   font-size: 2.5rem;
   font-family: fantasy;
   color: #6ca18f;
   letter-spacing: 3px;
   margin-bottom: 5px;
-  margin-left: auto;
 }
 
 .swiper-wrapper .swiper {
@@ -39,6 +38,16 @@ h2 {
   height: 300;
   width: 250;
   object-fit: cover;
+}
+
+#section__facts h2 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5rem;
+    font-family: fantasy;
+    color: #6ca18f;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
 }
 
 .swiper-button-next:after, .swiper-button-prev::after {
@@ -88,7 +97,6 @@ h2 {
       &_controls {
         display: flex;
         align-items: center;
-        justify-content: space-between;
       }
 
       &_stuff {
